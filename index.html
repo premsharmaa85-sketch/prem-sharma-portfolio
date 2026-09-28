@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Prem Sharma — Developer, Creator and Game Builder">
-<meta name="author" content="Prem Sharma">
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Prem Sharma — Creator, Developer and Game Builder">
 
 <title>PREM SHARMA — Ideas. Made real.</title>
+
 
 <style>
 
@@ -27,14 +31,30 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     color: white;
-    background:
-        radial-gradient(circle at 15% 10%, rgba(143, 73, 255, .25), transparent 30%),
-        radial-gradient(circle at 85% 35%, rgba(88, 42, 220, .20), transparent 30%),
-        #080511;
+
     line-height: 1.6;
+
     overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(143, 73, 255, .25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(88, 42, 220, .20),
+            transparent 30%
+        ),
+        #080511;
 }
 
 a {
@@ -48,37 +68,60 @@ a {
 ===================================================== */
 
 .navbar {
+
     position: fixed;
+
     top: 20px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: min(1100px, 92%);
+
     z-index: 1000;
+
     transition: .3s ease;
 }
 
 .nav-container {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     padding: 15px 24px;
 
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.12);
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
     backdrop-filter: blur(20px);
 
     border-radius: 50px;
+
     transition: .3s ease;
 }
 
 .navbar.scrolled .nav-container {
-    background: rgba(12,7,20,.90);
-    box-shadow: 0 10px 40px rgba(0,0,0,.3);
+
+    background:
+        rgba(12,7,20,.92);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.3);
 }
 
 .logo {
+
     font-size: 18px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
 }
 
@@ -87,14 +130,20 @@ a {
 }
 
 .nav-links {
+
     display: flex;
+
     align-items: center;
+
     gap: 28px;
 }
 
 .nav-links a {
-    color: #c7bdD2;
+
+    color: #c7bdd2;
+
     font-size: 14px;
+
     transition: .3s ease;
 }
 
@@ -103,17 +152,28 @@ a {
 }
 
 .nav-button {
+
     padding: 10px 18px;
+
     border-radius: 30px;
+
     background: #8d4cff;
+
     font-size: 14px;
+
     font-weight: bold;
+
     transition: .3s ease;
 }
 
 .nav-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(141,76,255,.35);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(141,76,255,.35);
 }
 
 
@@ -122,68 +182,110 @@ a {
 ===================================================== */
 
 .hero {
+
     min-height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: center;
-    padding: 150px 20px 100px;
+
+    padding:
+        150px 20px 100px;
 }
 
 .hero-content {
+
     width: 100%;
+
     max-width: 1100px;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 }
 
 .hero-label {
+
     color: #a979ff;
+
     font-size: 13px;
+
     letter-spacing: 4px;
+
     margin-bottom: 25px;
 }
 
 .hero h1 {
-    font-size: clamp(60px, 9vw, 115px);
+
+    font-size:
+        clamp(60px, 9vw, 115px);
+
     line-height: .98;
+
     letter-spacing: -5px;
+
     font-weight: 900;
 }
 
 .hero h1 span {
-    background: linear-gradient(90deg,#ffffff,#b477ff);
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #b477ff
+        );
+
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
+
     max-width: 720px;
+
     margin: 30px auto;
+
     color: #aaa0b9;
+
     font-size: 17px;
 }
 
 .hero-buttons {
+
     display: flex;
+
     justify-content: center;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
 .primary-button,
 .secondary-button {
+
     position: relative;
+
     overflow: hidden;
 
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 10px;
 
     padding: 14px 25px;
+
     border-radius: 40px;
 
     transition: .3s ease;
@@ -194,18 +296,27 @@ a {
 }
 
 .secondary-button {
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.13);
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(255,255,255,.13);
 }
 
 .primary-button:hover,
 .secondary-button:hover {
-    transform: translateY(-4px);
+
+    transform:
+        translateY(-4px);
 }
 
 .scroll-indicator {
+
     margin-top: 50px;
+
     color: #71687d;
+
     font-size: 13px;
 }
 
@@ -216,31 +327,45 @@ a {
 
 .section,
 .projects-section {
-    width: min(1100px, 92%);
+
+    width:
+        min(1100px, 92%);
+
     margin: auto;
+
     padding: 110px 0;
+
     text-align: center;
 }
 
 .section-number,
 .section-label {
+
     color: #9d62ff;
+
     font-size: 13px;
+
     letter-spacing: 3px;
+
     margin-bottom: 20px;
 }
 
 .section h2,
 .projects-title,
 .contact-content h2 {
-    font-size: clamp(45px,6vw,75px);
+
+    font-size:
+        clamp(45px, 6vw, 75px);
+
     line-height: 1.05;
+
     letter-spacing: -3px;
 }
 
 .section h2 span,
 .projects-title span,
 .contact-content h2 span {
+
     color: #a968ff;
 }
 
@@ -250,13 +375,19 @@ a {
 ===================================================== */
 
 .about-content {
+
     max-width: 750px;
-    margin: 35px auto 0;
+
+    margin:
+        35px auto 0;
 }
 
 .about-text {
+
     color: #aaa0b9;
+
     font-size: 17px;
+
     margin-bottom: 20px;
 }
 
@@ -265,22 +396,33 @@ a {
 }
 
 .about-tags {
+
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 12px;
+
     margin-top: 30px;
 }
 
-.about-tags span,
-.project-tags span {
-    padding: 9px 17px;
+.about-tags span {
+
+    padding:
+        9px 17px;
+
     border-radius: 30px;
 
-    background: rgba(141,76,255,.12);
-    border: 1px solid rgba(141,76,255,.25);
+    background:
+        rgba(141,76,255,.12);
+
+    border:
+        1px solid rgba(141,76,255,.25);
 
     color: #d5b9ff;
+
     font-size: 13px;
 }
 
@@ -290,27 +432,42 @@ a {
 ===================================================== */
 
 .projects-subtitle {
+
     color: #aaa0b9;
-    margin: 20px auto 50px;
+
+    max-width: 700px;
+
+    margin:
+        20px auto 50px;
 }
 
 .projects-grid {
+
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 25px;
 }
 
 .project-card {
+
     position: relative;
 
-    padding: 40px 30px;
+    padding:
+        40px 30px;
 
     text-align: center;
 
-    background: rgba(255,255,255,.055);
-    border: 1px solid rgba(255,255,255,.11);
+    background:
+        rgba(255,255,255,.055);
 
-    backdrop-filter: blur(18px);
+    border:
+        1px solid rgba(255,255,255,.11);
+
+    backdrop-filter:
+        blur(18px);
 
     border-radius: 25px;
 
@@ -319,66 +476,141 @@ a {
         border-color .3s ease,
         box-shadow .3s ease;
 
-    transform-style: preserve-3d;
+    transform-style:
+        preserve-3d;
 }
 
 .project-card:hover {
-    border-color: rgba(166,105,255,.55);
-    box-shadow: 0 20px 60px rgba(100,40,200,.18);
+
+    border-color:
+        rgba(166,105,255,.55);
+
+    box-shadow:
+        0 20px 60px
+        rgba(100,40,200,.18);
 }
 
 .project-number {
+
     color: #8e5bd8;
+
     font-size: 13px;
+
     letter-spacing: 2px;
+
     margin-bottom: 15px;
 }
 
 .project-icon {
+
     font-size: 48px;
+
     margin-bottom: 15px;
 }
 
 .project-status {
+
     display: inline-block;
 
-    padding: 7px 14px;
+    padding:
+        7px 14px;
+
     margin-bottom: 18px;
 
     border-radius: 30px;
 
     font-size: 11px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
+    color: #bda0e9;
+
+    background:
+        rgba(141,76,255,.10);
+
+    border:
+        1px solid rgba(141,76,255,.25);
 }
 
 .completed {
+
     color: #70e69a;
-    background: rgba(70,220,130,.10);
-    border: 1px solid rgba(70,220,130,.25);
+
+    background:
+        rgba(70,220,130,.10);
+
+    border:
+        1px solid rgba(70,220,130,.25);
 }
 
 .coming-soon {
+
     color: #ffbd63;
-    background: rgba(255,180,70,.10);
-    border: 1px solid rgba(255,180,70,.25);
+
+    background:
+        rgba(255,180,70,.10);
+
+    border:
+        1px solid rgba(255,180,70,.25);
 }
 
 .project-card h3 {
+
     font-size: 27px;
+
     margin-bottom: 15px;
 }
 
 .project-card p {
+
     color: #aaa0b9;
+
     margin-bottom: 25px;
 }
 
 .project-tags {
+
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 10px;
+}
+
+.project-tags span {
+
+    padding:
+        9px 17px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(141,76,255,.12);
+
+    border:
+        1px solid rgba(141,76,255,.25);
+
+    color: #d5b9ff;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   SOFTWARE SECTION
+===================================================== */
+
+.software-section {
+
+    border-top:
+        1px solid rgba(255,255,255,.05);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.05);
 }
 
 
@@ -387,30 +619,45 @@ a {
 ===================================================== */
 
 .skills-container {
+
     max-width: 800px;
-    margin: 35px auto 0;
+
+    margin:
+        35px auto 0;
 }
 
 .skills-description {
+
     color: #aaa0b9;
+
     font-size: 17px;
+
     margin-bottom: 35px;
 }
 
 .skills {
+
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 14px;
 }
 
 .skill {
-    padding: 13px 22px;
+
+    padding:
+        13px 22px;
 
     border-radius: 30px;
 
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.12);
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid rgba(255,255,255,.12);
 
     color: #ddd5e6;
 
@@ -418,8 +665,13 @@ a {
 }
 
 .skill:hover {
-    transform: translateY(-5px) scale(1.04);
-    border-color: #9d62ff;
+
+    transform:
+        translateY(-5px)
+        scale(1.04);
+
+    border-color:
+        #9d62ff;
 }
 
 
@@ -428,33 +680,49 @@ a {
 ===================================================== */
 
 .contact-content {
+
     max-width: 900px;
+
     margin: auto;
 }
 
 .contact-description {
+
     max-width: 600px;
-    margin: 25px auto 40px;
+
+    margin:
+        25px auto 40px;
+
     color: #aaa0b9;
 }
 
 .contact-info-row {
+
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 20px;
+
     margin-bottom: 35px;
 }
 
 .contact-info {
-    width: min(400px,100%);
+
+    width:
+        min(400px, 100%);
 
     padding: 25px;
 
     border-radius: 20px;
 
-    background: rgba(255,255,255,.055);
-    border: 1px solid rgba(255,255,255,.10);
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(255,255,255,.10);
 
     color: #ddd4e8;
 
@@ -462,53 +730,85 @@ a {
 }
 
 .contact-info:hover {
-    border-color: rgba(166,105,255,.5);
-    transform: translateY(-4px);
+
+    border-color:
+        rgba(166,105,255,.5);
+
+    transform:
+        translateY(-4px);
 }
 
 .contact-label {
+
     display: block;
+
     color: #9d62ff;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     margin-bottom: 8px;
 }
 
 .contact-button {
+
     position: relative;
+
     overflow: hidden;
 
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 10px;
 
-    padding: 20px 45px;
+    padding:
+        20px 45px;
 
     border-radius: 50px;
 
-    background: linear-gradient(90deg,#783cff,#a86aff);
+    background:
+        linear-gradient(
+            90deg,
+            #783cff,
+            #a86aff
+        );
 
     font-size: 22px;
+
     font-weight: bold;
 
     transition: .3s ease;
 }
 
 .contact-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(130,60,255,.3);
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(130,60,255,.3);
 }
 
 .social-links {
+
     display: flex;
+
     justify-content: center;
+
     gap: 28px;
+
     margin-top: 40px;
 }
 
 .social-links a {
+
     color: #aaa0b9;
+
     transition: .3s ease;
 }
 
@@ -522,20 +822,29 @@ a {
 ===================================================== */
 
 footer {
-    padding: 40px 20px;
+
+    padding:
+        40px 20px;
+
     text-align: center;
+
     color: #70677d;
-    border-top: 1px solid rgba(255,255,255,.08);
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
 }
 
 
 /* =====================================================
-   SCROLL ANIMATION
+   SCROLL REVEAL
 ===================================================== */
 
 .reveal {
+
     opacity: 0;
-    transform: translateY(45px);
+
+    transform:
+        translateY(45px);
 
     transition:
         opacity .8s ease,
@@ -543,8 +852,11 @@ footer {
 }
 
 .reveal.show {
+
     opacity: 1;
-    transform: translateY(0);
+
+    transform:
+        translateY(0);
 }
 
 
@@ -553,16 +865,19 @@ footer {
 ===================================================== */
 
 .mouse-glow {
+
     position: fixed;
 
     width: 300px;
+
     height: 300px;
 
     border-radius: 50%;
 
     pointer-events: none;
 
-    transform: translate(-50%,-50%);
+    transform:
+        translate(-50%, -50%);
 
     background:
         radial-gradient(
@@ -578,22 +893,27 @@ footer {
 
 
 /* =====================================================
-   RIPPLE EFFECT
+   RIPPLE
 ===================================================== */
 
 .ripple {
+
     position: absolute;
 
     width: 10px;
+
     height: 10px;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,.35);
+    background:
+        rgba(255,255,255,.35);
 
-    transform: translate(-50%,-50%);
+    transform:
+        translate(-50%, -50%);
 
-    animation: ripple-animation .6s linear;
+    animation:
+        ripple-animation .6s linear;
 
     pointer-events: none;
 }
@@ -601,14 +921,20 @@ footer {
 @keyframes ripple-animation {
 
     from {
+
         width: 10px;
+
         height: 10px;
+
         opacity: .7;
     }
 
     to {
+
         width: 300px;
+
         height: 300px;
+
         opacity: 0;
     }
 }
@@ -629,7 +955,10 @@ footer {
     }
 
     .hero h1 {
-        font-size: clamp(50px,15vw,75px);
+
+        font-size:
+            clamp(50px, 15vw, 75px);
+
         letter-spacing: -3px;
     }
 
@@ -639,13 +968,17 @@ footer {
 
     .section,
     .projects-section {
-        padding: 80px 0;
+
+        padding:
+            80px 0;
     }
 
     .section h2,
     .projects-title,
     .contact-content h2 {
+
         font-size: 45px;
+
         letter-spacing: -2px;
     }
 
@@ -654,16 +987,75 @@ footer {
     }
 
     .contact-button {
+
         font-size: 19px;
-        padding: 18px 35px;
+
+        padding:
+            18px 35px;
     }
 
     .social-links {
         flex-wrap: wrap;
     }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .navbar {
+        top: 10px;
+    }
+
+    .nav-container {
+        padding:
+            13px 17px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-button {
+        padding:
+            8px 13px;
+
+        font-size: 12px;
+    }
+
+    .hero h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .project-card {
+        padding:
+            30px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
+::selection {
+
+    background:
+        rgba(157,98,255,.5);
+
+    color: white;
 }
 
 </style>
+
 </head>
 
 
@@ -682,22 +1074,41 @@ footer {
             PREM SHARMA<span>.</span>
         </a>
 
+
         <div class="nav-links">
 
-            <a href="#home">Home</a>
+            <a href="#home">
+                Home
+            </a>
 
-            <a href="#about">About</a>
+            <a href="#about">
+                About
+            </a>
 
-            <a href="#projects">Projects</a>
+            <a href="#projects">
+                Projects
+            </a>
 
-            <a href="#skills">Skills</a>
+            <a href="#software">
+                Software
+            </a>
 
-            <a href="#contact">Contact</a>
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
 
         </div>
 
-        <a href="#contact" class="nav-button">
+
+        <a href="#contact"
+           class="nav-button">
+
             Let's Talk
+
         </a>
 
     </nav>
@@ -712,41 +1123,70 @@ footer {
 
 <main>
 
-<section id="home" class="hero">
+<section id="home"
+         class="hero">
 
     <div class="hero-content reveal">
 
+
         <p class="hero-label">
+
             ✦ CREATOR • DEVELOPER • BUILDER
+
         </p>
 
+
         <h1>
-            I turn <span>bold ideas</span><br>
+
+            I turn
+            <span>bold ideas</span>
+
+            <br>
+
             into digital experiences.
+
         </h1>
 
+
         <p class="hero-description">
+
             I design, build, and experiment with games,
             interactive experiences, and technology-driven
             projects that turn imagination into something
             you can experience.
+
         </p>
+
 
         <div class="hero-buttons">
 
-            <a href="#projects" class="primary-button">
+
+            <a href="#projects"
+               class="primary-button">
+
                 Explore my work →
+
             </a>
 
-            <a href="#about" class="secondary-button">
+
+            <a href="#about"
+               class="secondary-button">
+
                 More about me
+
             </a>
+
 
         </div>
 
-        <a href="#about" class="scroll-indicator">
+
+        <a href="#about"
+           class="scroll-indicator">
+
             ↓ Scroll to explore
+
         </a>
+
 
     </div>
 
@@ -758,40 +1198,76 @@ footer {
      ABOUT
 ===================================================== -->
 
-<section id="about" class="section reveal">
+<section id="about"
+         class="section reveal">
+
 
     <p class="section-number">
+
         01 — ABOUT
+
     </p>
 
+
     <h2>
-        Turning curiosity<br>
-        into <span>creation.</span>
+
+        Turning curiosity
+        <br>
+
+        into
+        <span>creation.</span>
+
     </h2>
+
 
     <div class="about-content">
 
-        <p class="about-text">
-            I'm <strong>Prem Sharma</strong> — a creator
-            interested in games, technology and
-            interactive experiences.
-        </p>
 
         <p class="about-text">
-            I enjoy taking an idea, experimenting with it,
-            learning along the way and turning it into
-            something people can actually interact with.
+
+            I'm
+            <strong>Prem Sharma</strong>
+
+            — a creator interested in
+            games, technology and
+            interactive experiences.
+
         </p>
+
+
+        <p class="about-text">
+
+            I enjoy taking an idea,
+            experimenting with it,
+            learning along the way
+            and turning it into something
+            people can actually interact with.
+
+        </p>
+
 
         <div class="about-tags">
 
-            <span>🎮 Game Development</span>
 
-            <span>💻 Coding</span>
+            <span>
+                🎮 Game Development
+            </span>
 
-            <span>🤖 AI & Experiments</span>
 
-            <span>🚀 Creative Projects</span>
+            <span>
+                💻 Coding
+            </span>
+
+
+            <span>
+                🤖 AI & Experiments
+            </span>
+
+
+            <span>
+                🚀 Creative Projects
+            </span>
+
 
         </div>
 
@@ -802,22 +1278,33 @@ footer {
 
 
 <!-- =====================================================
-     PROJECTS
+     THINGS I MADE
 ===================================================== -->
 
-<section id="projects" class="projects-section reveal">
+<section id="projects"
+         class="projects-section reveal">
+
 
     <p class="section-label">
+
         02 — PROJECTS
+
     </p>
 
+
     <h2 class="projects-title">
-        Things I <span>build.</span>
+
+        Things I
+        <span>made.</span>
+
     </h2>
 
+
     <p class="projects-subtitle">
-        Games, experiments and digital experiences
-        built from ideas.
+
+        Games, experiments and digital
+        experiences built from ideas.
+
     </p>
 
 
@@ -828,35 +1315,49 @@ footer {
 
         <div class="project-card">
 
+
             <div class="project-number">
                 01
             </div>
+
 
             <div class="project-icon">
                 🤖
             </div>
 
+
             <div class="project-status completed">
+
                 ✓ COMPLETED
+
             </div>
+
 
             <h3>
                 JARVIS AI CHATBOT
             </h3>
 
+
             <p>
-                A personal AI chatbot and assistant built
-                to interact with commands, answer questions
-                and perform useful tasks.
+
+                A personal AI chatbot and assistant
+                built to interact with commands,
+                answer questions and perform
+                useful tasks.
+
             </p>
+
 
             <div class="project-tags">
 
                 <span>Python</span>
+
                 <span>AI</span>
+
                 <span>Chatbot</span>
 
             </div>
+
 
         </div>
 
@@ -866,35 +1367,48 @@ footer {
 
         <div class="project-card">
 
+
             <div class="project-number">
                 02
             </div>
+
 
             <div class="project-icon">
                 🧟
             </div>
 
+
             <div class="project-status coming-soon">
+
                 🚧 COMING SOON
+
             </div>
+
 
             <h3>
                 ZOMBIE RUSH
             </h3>
 
+
             <p>
-                A zombie survival game where players
-                fight through waves of zombies and
-                try to survive.
+
+                A zombie survival game where
+                players fight through waves
+                of zombies and try to survive.
+
             </p>
+
 
             <div class="project-tags">
 
                 <span>Unity</span>
+
                 <span>C#</span>
+
                 <span>3D</span>
 
             </div>
+
 
         </div>
 
@@ -904,72 +1418,139 @@ footer {
 
         <div class="project-card">
 
+
             <div class="project-number">
                 03
             </div>
+
 
             <div class="project-icon">
                 🏪
             </div>
 
+
             <div class="project-status coming-soon">
+
                 🚧 COMING SOON
+
             </div>
+
 
             <h3>
                 RETAIL RIVALS
             </h3>
 
+
             <p>
-                A competitive retail simulation game
-                where players build, manage and grow
-                their own business.
+
+                A competitive retail simulation
+                game where players build,
+                manage and grow their own business.
+
             </p>
+
 
             <div class="project-tags">
 
                 <span>Unity</span>
+
                 <span>Strategy</span>
+
                 <span>Game</span>
 
             </div>
 
+
         </div>
 
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SOFTWARE BEHIND THE GAMES
+===================================================== -->
+
+<section id="software"
+         class="projects-section
+                software-section
+                reveal">
+
+
+    <p class="section-label">
+
+        03 — SOFTWARE
+
+    </p>
+
+
+    <h2 class="projects-title">
+
+        Software behind the
+        <span>games.</span>
+
+    </h2>
+
+
+    <p class="projects-subtitle">
+
+        The tools I use to build,
+        design and manage my projects.
+
+    </p>
+
+
+    <div class="projects-grid">
 
 
         <!-- UNITY -->
 
         <div class="project-card">
 
+
             <div class="project-number">
-                04
+                01
             </div>
+
 
             <div class="project-icon">
                 🎮
             </div>
 
+
             <div class="project-status">
-                SOFTWARE
+
+                GAME ENGINE
+
             </div>
+
 
             <h3>
                 UNITY
             </h3>
 
+
             <p>
-                A powerful game engine I use to create
+
+                A game engine I use to create
                 2D and 3D games while learning C#.
+
             </p>
+
 
             <div class="project-tags">
 
                 <span>2D</span>
+
                 <span>3D</span>
+
                 <span>C#</span>
 
             </div>
+
 
         </div>
 
@@ -979,34 +1560,252 @@ footer {
 
         <div class="project-card">
 
+
             <div class="project-number">
-                05
+                02
             </div>
+
 
             <div class="project-icon">
                 🕹️
             </div>
 
+
             <div class="project-status">
-                SOFTWARE
+
+                GAME ENGINE
+
             </div>
+
 
             <h3>
                 GODOT
             </h3>
 
+
             <p>
-                A lightweight open-source game engine
-                for creating 2D and 3D games.
+
+                A lightweight open-source
+                game engine for creating
+                2D and 3D games.
+
             </p>
+
 
             <div class="project-tags">
 
                 <span>2D</span>
+
                 <span>3D</span>
+
                 <span>GDScript</span>
 
             </div>
+
+
+        </div>
+
+
+
+        <!-- BLENDER -->
+
+        <div class="project-card">
+
+
+            <div class="project-number">
+                03
+            </div>
+
+
+            <div class="project-icon">
+                🧊
+            </div>
+
+
+            <div class="project-status">
+
+                3D SOFTWARE
+
+            </div>
+
+
+            <h3>
+                BLENDER
+            </h3>
+
+
+            <p>
+
+                A 3D creation tool used for
+                modeling, animation and
+                creating game assets.
+
+            </p>
+
+
+            <div class="project-tags">
+
+                <span>3D</span>
+
+                <span>Modeling</span>
+
+                <span>Animation</span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- VS CODE -->
+
+        <div class="project-card">
+
+
+            <div class="project-number">
+                04
+            </div>
+
+
+            <div class="project-icon">
+                💻
+            </div>
+
+
+            <div class="project-status">
+
+                CODE EDITOR
+
+            </div>
+
+
+            <h3>
+                VS CODE
+            </h3>
+
+
+            <p>
+
+                My code editor for writing
+                and managing code for
+                websites, games and experiments.
+
+            </p>
+
+
+            <div class="project-tags">
+
+                <span>Code</span>
+
+                <span>Python</span>
+
+                <span>C#</span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- GITHUB -->
+
+        <div class="project-card">
+
+
+            <div class="project-number">
+                05
+            </div>
+
+
+            <div class="project-icon">
+                🐙
+            </div>
+
+
+            <div class="project-status">
+
+                DEVELOPMENT
+
+            </div>
+
+
+            <h3>
+                GITHUB
+            </h3>
+
+
+            <p>
+
+                A platform I use to store,
+                manage and share my
+                code and projects.
+
+            </p>
+
+
+            <div class="project-tags">
+
+                <span>Git</span>
+
+                <span>Code</span>
+
+                <span>Projects</span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- UNITY HUB -->
+
+        <div class="project-card">
+
+
+            <div class="project-number">
+                06
+            </div>
+
+
+            <div class="project-icon">
+                🛠️
+            </div>
+
+
+            <div class="project-status">
+
+                DEVELOPMENT TOOL
+
+            </div>
+
+
+            <h3>
+                UNITY HUB
+            </h3>
+
+
+            <p>
+
+                A tool I use to manage Unity
+                versions, projects and
+                development environments.
+
+            </p>
+
+
+            <div class="project-tags">
+
+                <span>Unity</span>
+
+                <span>Projects</span>
+
+                <span>Development</span>
+
+            </div>
+
 
         </div>
 
@@ -1021,48 +1820,69 @@ footer {
      SKILLS
 ===================================================== -->
 
-<section id="skills" class="section reveal">
+<section id="skills"
+         class="section reveal">
+
 
     <p class="section-number">
-        03 — SKILLS
+
+        04 — SKILLS
+
     </p>
 
+
     <h2>
-        Things I <span>work with.</span>
+
+        Things I
+        <span>work with.</span>
+
     </h2>
+
 
     <div class="skills-container">
 
+
         <p class="skills-description">
-            Technologies and tools I have used while
-            learning, experimenting and building projects.
+
+            Technologies and tools I have used
+            while learning, experimenting and
+            building projects.
+
         </p>
 
+
         <div class="skills">
+
 
             <div class="skill">
                 🐍 Python
             </div>
 
+
             <div class="skill">
                 🌐 HTML
             </div>
+
 
             <div class="skill">
                 🎨 CSS
             </div>
 
+
             <div class="skill">
                 ☕ Java
             </div>
+
 
             <div class="skill">
                 🎮 Unity
             </div>
 
+
             <div class="skill">
                 🤖 AI & Experiments
             </div>
+
 
         </div>
 
@@ -1076,26 +1896,46 @@ footer {
      CONTACT
 ===================================================== -->
 
-<section id="contact" class="section contact reveal">
+<section id="contact"
+         class="section contact reveal">
+
 
     <div class="contact-content">
 
+
         <p class="section-number">
-            04 — CONTACT
+
+            05 — CONTACT
+
         </p>
 
+
         <h2>
-            Have an idea?<br>
-            <span>Let's make it real.</span>
+
+            Have an idea?
+
+            <br>
+
+            <span>
+                Let's make it real.
+            </span>
+
         </h2>
 
+
         <p class="contact-description">
+
             I'm always interested in creating,
-            experimenting and learning something new.
+            experimenting and learning
+            something new.
+
         </p>
 
 
         <div class="contact-info-row">
+
+
+            <!-- EMAIL -->
 
             <a
                 href="mailto:premsharmaa85@gmail.com"
@@ -1106,10 +1946,13 @@ footer {
                     EMAIL
                 </span>
 
-                ✉️ premsharmaa85@gmail.com
+                ✉️
+                premsharmaa85@gmail.com
 
             </a>
 
+
+            <!-- PHONE -->
 
             <a
                 href="tel:9219656594"
@@ -1120,9 +1963,11 @@ footer {
                     PHONE
                 </span>
 
-                📞 9219656594
+                📞
+                9219656594
 
             </a>
+
 
         </div>
 
@@ -1131,25 +1976,41 @@ footer {
             href="mailto:premsharmaa85@gmail.com"
             class="contact-button"
         >
+
             Get in touch ↗
+
         </a>
 
 
         <div class="social-links">
 
-            <a href="#" target="_blank">
+
+            <a href="#"
+               target="_blank">
+
                 GitHub
+
             </a>
 
-            <a href="#" target="_blank">
+
+            <a href="#"
+               target="_blank">
+
                 Instagram
+
             </a>
 
-            <a href="#" target="_blank">
+
+            <a href="#"
+               target="_blank">
+
                 LinkedIn
+
             </a>
+
 
         </div>
+
 
     </div>
 
@@ -1165,7 +2026,8 @@ footer {
 
 <footer>
 
-    © 2026 Prem Sharma. Built with ideas & code.
+    © 2026 Prem Sharma.
+    Built with ideas & code.
 
 </footer>
 
@@ -1180,26 +2042,32 @@ footer {
 const revealElements =
     document.querySelectorAll(".reveal");
 
+
 const revealObserver =
     new IntersectionObserver(
+
         (entries, observer) => {
 
             entries.forEach(entry => {
 
                 if (entry.isIntersecting) {
 
-                    entry.target.classList.add("show");
+                    entry.target
+                        .classList
+                        .add("show");
 
-                    observer.unobserve(entry.target);
-
+                    observer
+                        .unobserve(entry.target);
                 }
 
             });
 
         },
+
         {
             threshold: 0.12
         }
+
     );
 
 
@@ -1210,7 +2078,6 @@ revealElements.forEach(element => {
 });
 
 
-
 /* =====================================================
    NAVBAR SCROLL EFFECT
 ===================================================== */
@@ -1218,20 +2085,29 @@ revealElements.forEach(element => {
 const navbar =
     document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 50) {
+window.addEventListener(
+    "scroll",
+    () => {
 
-        navbar.classList.add("scrolled");
+        if (window.scrollY > 50) {
 
-    } else {
+            navbar
+                .classList
+                .add("scrolled");
 
-        navbar.classList.remove("scrolled");
+        }
+
+        else {
+
+            navbar
+                .classList
+                .remove("scrolled");
+
+        }
 
     }
-
-});
-
+);
 
 
 /* =====================================================
@@ -1241,22 +2117,26 @@ window.addEventListener("scroll", () => {
 const glow =
     document.createElement("div");
 
+
 glow.className =
     "mouse-glow";
+
 
 document.body.appendChild(glow);
 
 
-document.addEventListener("mousemove", event => {
+document.addEventListener(
+    "mousemove",
+    event => {
 
-    glow.style.left =
-        event.clientX + "px";
+        glow.style.left =
+            event.clientX + "px";
 
-    glow.style.top =
-        event.clientY + "px";
+        glow.style.top =
+            event.clientY + "px";
 
-});
-
+    }
+);
 
 
 /* =====================================================
@@ -1264,59 +2144,74 @@ document.addEventListener("mousemove", event => {
 ===================================================== */
 
 const cards =
-    document.querySelectorAll(".project-card");
+    document.querySelectorAll(
+        ".project-card"
+    );
 
 
 cards.forEach(card => {
 
-    card.addEventListener("mousemove", event => {
 
-        const rect =
-            card.getBoundingClientRect();
+    card.addEventListener(
+        "mousemove",
+        event => {
 
-        const x =
-            event.clientX - rect.left;
-
-        const y =
-            event.clientY - rect.top;
-
-        const centerX =
-            rect.width / 2;
-
-        const centerY =
-            rect.height / 2;
-
-        const rotateX =
-            ((y - centerY) / centerY) * -4;
-
-        const rotateY =
-            ((x - centerX) / centerX) * 4;
-
-        card.style.transform =
-            `
-            perspective(900px)
-            rotateX(${rotateX}deg)
-            rotateY(${rotateY}deg)
-            translateY(-8px)
-            `;
-
-    });
+            const rect =
+                card.getBoundingClientRect();
 
 
-    card.addEventListener("mouseleave", () => {
+            const x =
+                event.clientX - rect.left;
 
-        card.style.transform =
-            `
-            perspective(900px)
-            rotateX(0)
-            rotateY(0)
-            translateY(0)
-            `;
 
-    });
+            const y =
+                event.clientY - rect.top;
+
+
+            const centerX =
+                rect.width / 2;
+
+
+            const centerY =
+                rect.height / 2;
+
+
+            const rotateX =
+                ((y - centerY) /
+                centerY) * -4;
+
+
+            const rotateY =
+                ((x - centerX) /
+                centerX) * 4;
+
+
+            card.style.transform =
+
+                `perspective(900px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)
+                 translateY(-8px)`;
+
+        }
+    );
+
+
+    card.addEventListener(
+        "mouseleave",
+        () => {
+
+            card.style.transform =
+
+                `perspective(900px)
+                 rotateX(0)
+                 rotateY(0)
+                 translateY(0)`;
+
+        }
+    );
 
 });
-
 
 
 /* =====================================================
@@ -1325,41 +2220,63 @@ cards.forEach(card => {
 
 const buttons =
     document.querySelectorAll(
-        ".primary-button, .secondary-button, .nav-button, .contact-button"
+
+        ".primary-button, " +
+        ".secondary-button, " +
+        ".nav-button, " +
+        ".contact-button"
+
     );
 
 
 buttons.forEach(button => {
 
-    button.addEventListener("click", function(event) {
 
-        const ripple =
-            document.createElement("span");
+    button.addEventListener(
+        "click",
+        function(event) {
 
-        ripple.className =
-            "ripple";
 
-        const rect =
-            button.getBoundingClientRect();
+            const ripple =
+                document.createElement("span");
 
-        ripple.style.left =
-            (event.clientX - rect.left) + "px";
 
-        ripple.style.top =
-            (event.clientY - rect.top) + "px";
+            ripple.className =
+                "ripple";
 
-        button.appendChild(ripple);
 
-        setTimeout(() => {
+            const rect =
+                button.getBoundingClientRect();
 
-            ripple.remove();
 
-        }, 600);
+            ripple.style.left =
 
-    });
+                (event.clientX -
+                rect.left) + "px";
+
+
+            ripple.style.top =
+
+                (event.clientY -
+                rect.top) + "px";
+
+
+            button.appendChild(ripple);
+
+
+            setTimeout(
+                () => {
+
+                    ripple.remove();
+
+                },
+                600
+            );
+
+        }
+    );
 
 });
-
 
 
 /* =====================================================
@@ -1367,32 +2284,46 @@ buttons.forEach(button => {
 ===================================================== */
 
 document
-    .querySelectorAll('a[href^="#"]')
+    .querySelectorAll(
+        'a[href^="#"]'
+    )
     .forEach(link => {
 
-        link.addEventListener("click", event => {
 
-            const targetId =
-                link.getAttribute("href");
+        link.addEventListener(
+            "click",
+            event => {
 
-            const target =
-                document.querySelector(targetId);
 
-            if (target) {
+                const targetId =
+                    link.getAttribute("href");
 
-                event.preventDefault();
 
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+                const target =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (target) {
+
+                    event.preventDefault();
+
+
+                    target.scrollIntoView({
+
+                        behavior: "smooth",
+
+                        block: "start"
+
+                    });
+
+                }
 
             }
-
-        });
+        );
 
     });
-
 
 
 /* =====================================================
@@ -1400,29 +2331,40 @@ document
 ===================================================== */
 
 const skills =
-    document.querySelectorAll(".skill");
+    document.querySelectorAll(
+        ".skill"
+    );
 
 
 skills.forEach(skill => {
 
-    skill.addEventListener("mouseenter", () => {
 
-        skill.style.transform =
-            "translateY(-5px) scale(1.04)";
+    skill.addEventListener(
+        "mouseenter",
+        () => {
 
-    });
+            skill.style.transform =
+                "translateY(-5px) scale(1.04)";
+
+        }
+    );
 
 
-    skill.addEventListener("mouseleave", () => {
+    skill.addEventListener(
+        "mouseleave",
+        () => {
 
-        skill.style.transform =
-            "translateY(0) scale(1)";
+            skill.style.transform =
+                "translateY(0) scale(1)";
 
-    });
+        }
+    );
 
 });
 
 </script>
 
+
 </body>
+
 </html>
